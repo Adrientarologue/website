@@ -1,0 +1,34 @@
+[
+    {
+        "id": "t1",
+        "name": "Nadia B.",
+        "city": "Lyon",
+        "rating": 5,
+        "message": "J’étais dans une situation amoureuse bloquée depuis des mois. L’accompagnement m’a permis de retrouver de la clarté et une vraie évolution dans ma relation.",
+        "service": "Guidance sentimentale"
+    },
+    {
+        "id": "t2",
+        "name": "Amine K.",
+        "city": "Marseille",
+        "rating": 5,
+        "message": "Travail sérieux, humain et très professionnel. Le rituel a été expliqué étape par étape, avec un suivi rassurant.",
+        "service": "Retour affectif"
+    },
+    {
+        "id": "t3",
+        "name": "Sophie R.",
+        "city": "Paris",
+        "rating": 5,
+        "message": "Je me sentais épuisée énergétiquement. Après le désenvoûtement, j’ai retrouvé un vrai apaisement et une stabilité émotionnelle.",
+        "service": "Désenvoûtement"
+    },
+    {
+        "id": "t4",
+        "name": "Karim T.",
+        "city": "Toulouse",
+        "rating": 5,
+        "message": "L’approche premium est réelle : écoute, discrétion et résultats concrets. Je recommande sans hésiter.",
+        "service": "Rituel personnalisé"
+    }
+]

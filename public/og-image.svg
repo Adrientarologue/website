@@ -1,0 +1,12 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07040f"/>
+      <stop offset="1" stop-color="#1b1030"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1060" height="490" rx="20" fill="#ffffff10" stroke="#d4af37"/>
+  <text x="120" y="290" fill="#f5ecda" font-size="64" font-family="Georgia, serif">Quentin Ramirez</text>
+  <text x="120" y="360" fill="#d4af37" font-size="34" font-family="Arial, sans-serif">Accompagnement Spirituel Premium</text>
+</svg>
