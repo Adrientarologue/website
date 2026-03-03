@@ -21,22 +21,24 @@ export function HeroSection() {
                             désenvoûtement. Une approche humaine, discrète et sur-mesure pour
                             vous accompagner à chaque étape.
                         </p>
-                        <div className="mt-8 flex flex-wrap gap-3">
-                            <Link
-                                href="/contact"
-                                className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-[#130c1e] transition hover:brightness-95"
-                            >
-                                Réserver une consultation
-                            </Link>
-                            <a
-                                href={`tel:${siteConfig.phoneRaw}`}
-                                className="rounded-full border border-[var(--border)] bg-[var(--card)] px-6 py-3 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--accent)]"
-                            >
-                                Appeler maintenant
-                            </a>
+                        <div className="mt-8 space-y-3">
+                            <div className="grid grid-cols-2 gap-3">
+                                <Link
+                                    href="/contact"
+                                    className="inline-flex items-center justify-center rounded-full bg-[var(--accent)] px-4 py-3 text-center text-sm font-semibold text-[#130c1e] transition hover:brightness-95"
+                                >
+                                    Réserver une consultation
+                                </Link>
+                                <a
+                                    href={`tel:${siteConfig.phoneRaw}`}
+                                    className="inline-flex items-center justify-center rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-3 text-center text-sm font-semibold text-[var(--text)] transition hover:border-[var(--accent)]"
+                                >
+                                    Appeler maintenant
+                                </a>
+                            </div>
                             <a
                                 href={`mailto:${siteConfig.email}`}
-                                className="rounded-full border border-[var(--border)] bg-[var(--card)] px-6 py-3 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--accent)]"
+                                className="inline-flex w-full items-center justify-center rounded-full border border-[var(--border)] bg-[var(--card)] px-6 py-3 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--accent)]"
                             >
                                 Envoyer un email
                             </a>

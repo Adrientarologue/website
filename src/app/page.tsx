@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EntranceCarousel } from "@/components/sections/EntranceCarousel";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { StatsSection } from "@/components/sections/StatsSection";
@@ -18,6 +19,7 @@ export const metadata: Metadata = buildMetadata({
 export default function Home() {
   return (
     <main>
+      <EntranceCarousel />
       <HeroSection />
       <StatsSection />
       <ServicesGrid compact />
