@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AnimatedReveal } from "@/components/ui/AnimatedReveal";
 import { Container } from "@/components/ui/Container";
 import { SectionTitle } from "@/components/ui/SectionTitle";
@@ -6,6 +7,18 @@ import { siteConfig } from "@/config/site";
 type ServicesGridProps = {
     compact?: boolean;
 };
+
+const serviceImageMap: Record<string, string> = {
+    "Retour affectif": "/images/2000_gi-6823f691e2acd.jpg",
+    "Désenvoûtement": "/images/800_gi-680ae285dd582.jpg",
+    "Guidance sentimentale": "/images/2000_gi-6824d6cf09f54.jpg",
+};
+
+const highlightedTitles = new Set([
+    "Retour affectif",
+    "Désenvoûtement",
+    "Guidance sentimentale",
+]);
 
 export function ServicesGrid({ compact = false }: ServicesGridProps) {
     const services = compact ? siteConfig.services.slice(0, 3) : siteConfig.services;
@@ -26,7 +39,25 @@ export function ServicesGrid({ compact = false }: ServicesGridProps) {
                                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
                                     {service.highlight}
                                 </p>
-                                <h3 className="font-title text-2xl text-[var(--text)]">{service.title}</h3>
+                                <h3
+                                    className={`font-title text-2xl ${highlightedTitles.has(service.title)
+                                            ? "text-[#c62828]"
+                                            : "text-[var(--text)]"
+                                        }`}
+                                >
+                                    {service.title}
+                                </h3>
+                                {serviceImageMap[service.title] ? (
+                                    <div className="mt-3 overflow-hidden rounded-xl border border-[var(--border)]">
+                                        <Image
+                                            src={serviceImageMap[service.title]}
+                                            alt={`${service.title} - visuel`}
+                                            width={1200}
+                                            height={700}
+                                            className="h-44 w-full object-cover"
+                                        />
+                                    </div>
+                                ) : null}
                                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">
                                     {service.description}
                                 </p>
