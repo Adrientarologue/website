@@ -5,11 +5,11 @@ export const siteConfig = {
         "Accompagnement spirituel premium pour les problématiques amoureuses : retour affectif, guidance sentimentale et désenvoûtement.",
     url: "https://example.com",
     email: "quentinramireztarologue@gmail.com",
-    phoneDisplay: "+33 6 78 45 57 88",
-    phoneRaw: "+33678455788",
-    whatsappRaw: "33678455788",
+    phoneDisplay: "+33 7 45 53 16 04",
+    phoneRaw: "+33745531604",
+    whatsappRaw: "33745531604",
     whatsappLink:
-        "https://wa.me/33678455788?text=Bonjour%20Quentin%2C%20je%20souhaite%20un%20accompagnement%20spirituel.",
+        "https://wa.me/33745531604?text=Bonjour%20Quentin%2C%20je%20souhaite%20un%20accompagnement%20spirituel.",
     nav: [
         { label: "Accueil", href: "/" },
         { label: "Services", href: "/services" },
